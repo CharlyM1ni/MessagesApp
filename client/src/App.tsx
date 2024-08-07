@@ -1,11 +1,14 @@
-import { Button, ChakraProvider } from '@chakra-ui/react'
+import { Button, ChakraProvider, Container, Stack } from '@chakra-ui/react'
+import Navbar from './Components/Navbar'
 
 function App() {
   return (
-    <>
-      <h1>Mingsenger</h1>
+    <Stack h="100vh">
+      <Navbar />
+      <Container>
       <Button>Bisous</Button>
-    </>
+      </Container>
+    </Stack>
   )
 }
 
